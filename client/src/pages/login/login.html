@@ -1,0 +1,34 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="background">
+  <h1>Ionic Chat</h1>
+  <ion-card>
+    <ion-card-header>
+      Đăng nhập
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-item>
+          <ion-input type="text" placeholder="Email" [(ngModel)]='email'></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 5px;"></div>
+        <ion-item>
+          <ion-input type="Password" placeholder="Mật khẩu" [(ngModel)]='password'></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 10px;"></div>
+        <a style="color:chocolate" (click)="passwordRetrieval()">Quên mật khẩu?</a>
+        <button ion-button block round outline color='light' (click)='signin()'>Đăng nhập</button>
+        <div class="spacer" style="height: 10px;"></div>
+        <p>hoặc</p>
+        <div class="spacer" style="height: 10px;"></div>
+        <span style="color:lightblue;">Bạn chưa có tài khoản?</span>
+        <a style="color:#fff" (click)='signup()'> Đăng ký</a>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

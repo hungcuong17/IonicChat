@@ -1,0 +1,36 @@
+page-edit-profile {
+  #frofileAvatar {
+    height: 175px !important;
+    width: 170px !important;
+    border-radius: 50% !important;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgb(4, 238, 4);
+  }
+  // .scroll-content {
+  //   align-content: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   text-align: center;
+  // }
+
+  ion-card.card {
+    box-shadow: none;
+    background: whitesmoke;
+    border-radius: 5px;
+  }
+
+  .list>.item-block:first-child {
+    border: 1px solid slategrey ;
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+}

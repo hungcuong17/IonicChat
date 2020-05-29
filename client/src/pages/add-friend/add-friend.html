@@ -1,0 +1,44 @@
+<!--
+  Generated template for the AddFriendPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="hcolor">
+    <ion-title>Thêm bạn</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="margin-top: 10px">
+  <button class="btn" ion-button color="light" (click)="callPageInvite()">
+    <ion-icon name="mail-open"></ion-icon>
+  </button>
+  <p style="display: block; text-align: center; margin-top: 0;">Mời bạn bè</p>
+  <ion-list no-lines>
+    <ion-list-header style="margin-bottom: 0; padding-bottom: 0;">
+      Lời mời kết bạn
+      <a item-end (click)="viewAllFriendRequest()">Xem tất cả</a>
+    </ion-list-header>
+    <ion-item style="margin-top: 0;">
+      <ion-avatar item-left>
+        <img src="">
+      </ion-avatar>
+      <h2>Nam</h2>
+      <button ion-button round color="light" item-end (click)="sendAddFriend()">Thêm</button>
+      <button ion-button round color="light" item-end (click)="deleteFriendRequest()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="">
+      </ion-avatar>
+      <h2>Cường</h2>
+      <button ion-button round color="light" item-end (click)="sendAddFriend()">Thêm</button>
+      <button ion-button round color="light" item-end (click)="deleteFriendRequest()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
