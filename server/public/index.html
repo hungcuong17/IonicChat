@@ -4,23 +4,46 @@
 </header>
 
 <body>
-    <button onclick="myFunctionJoinChat()">
-        join Chat person 1
-    </button>
-
-    <button onclick="myFunction()">
+    <!-- <button onclick="myFunction()">
         create message person 1
-    </button>
-    </br>
-    <button onclick="myFunctionJoinChat2()">
-        join Chat person 2
-    </button>
-    <button onclick="myFunction2()">
+    </button> -->
+    
+    <!-- <button onclick="myFunction2()">
         create message person 2
     </button>
-    <p id="test">Hello</p>
+    <p id="test">Hello</p> -->
+    <!-- <br/><br/> -->
+
+
+
+    <!-- Callvideo -->
+    <button onclick="myFunctionJoinChat()">person 1 đăng nhập</button>
+
+    <br/><br/>
+    <button onclick="myFunctionJoinChat2()">person 2 đăng nhập</button>
+
+    <br/><br/>
+    <button id = "callVideo">Gọi video</button>
+
+    <br/><br/>
+    <p id="peerID" hidden></p>
+    <p id="statusCall" hidden></p>
+    <p id = 'notication'> Có người đang gọi video</p>
+    <p id = 'notication1'> Cuộc gọi đã ket thúc</p>
+    <button id="replyCallVideo">nghe video</button>
+    <br/><br/>
+    <button id="noReply">Không nghe</button>
+
+    <video id="localStream" width="300" controls></video>
+    
+    <br/><br/>
+    <video id="remoteStream" width="300" controls></video>
+    <br/><br/>
+    
     <script src="/socket.io/socket.io.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/peer.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/mainStream.js"></script>
 </body>
 
 </html>
